@@ -10,7 +10,7 @@ void bisection(double (*f)(double), double a, double b, int n){
         double m =0;
         for(int i=0; i<n; i++){
             m = 0.5 * (a + b);
-            printf("x_%d = %.16f\t", i + 1, m);
+            printf("x_%d = %.16f\t", i + 1, 1.52 - m);
             double fm = f(m);
             printf("f(x_%d) = %.16f\n", i + 1, fm);
             if(fm == 0){
@@ -141,7 +141,68 @@ int main(int argc, char *argv[]){
     double b = 4.96;
     int n = 15;*/
 
-    
+    //p1
+/*     double f(double x){
+        //double e = 2.71828182845904523530287; // euler
+        //double pi = 3.141592653589793238462643;
+
+        return pow(x, 3) - 7*pow(x,2) + 14*x - 7;
+    }
+    double a = 0.04308;
+    double b = 4.30541;
+    int n = 15; */
+
+    /*double f(double t){
+        double e = 2.71828182845904523530287; // euler
+        //double pi = 3.141592653589793238462643; //pi
+        double l = 1.41 * pow(10,-10);
+        double n = 203059833;
+
+        return (n + 1) / (1 + n*pow(e, -l*(n+1)*t)) - 25;
+    }
+    double a = 0;
+    double b = 1337;
+    int n = 15; */
+
+    /* double r = 1.22;
+    double f(double h){
+        //double e = 2.71828182845904523530287; // euler
+        double pi = 3.14159265358979323846;
+        double vs = (4*pi*pow(r, 3))/3;
+        double v = vs - ((462.37*vs)/1000);
+        return ((pi*pow(h,2))/3) * (3*r-h) - v;
+    }
+    double a = 0;
+    double b = 2*r;
+    int n = 15;
+ */
+
+/*     double r = 4.01;
+    double f(double h){
+        //double e = 2.71828182845904523530287; // euler
+        double pi = 3.141592653589793238462643;
+        double l = 1.52;        
+        double v = 31.6;
+
+        return l*(0.5*pi*pow(r,2) - pow(r,2)*asin(h/r) - h*sqrt(pow(r,2)-pow(h,2))) - v;
+    }
+    //colocar r - h lá em cima
+    double a = 0;
+    double b = r;
+    int n = 15; */
+
+    double f(double w){
+        //double e = 2.71828182845904523530287; // euler
+        //double pi = 3.141592653589793238462643;
+        double g = 9.81;       
+        double t = 1;
+        double xt = 4.04;
+
+        return -((g/(2*pow(w,2)))*(sinh(w*t) - sin(w*t))) - xt;
+    }
+    double a = -4.53;
+    double b = -0.35;
+    int n = 15;
 
     bisection(f, a, b, n);
 }

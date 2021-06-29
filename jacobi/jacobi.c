@@ -25,10 +25,10 @@ void jacobi(double a[ROWS][COLS], double b[COLS], double chute[COLS], int n){
     }
 }
 int main(){
-    double a[ROWS][COLS] = {{3.55941, 1.6492, 0.66651}, {-1.56294, 4.76155, -1.9549}, {-2.85747, -4.88641, -8.98759}};
-    double b[ROWS] = {-2.60175, -4.70056, -0.8796};
+    double a[ROWS][COLS] = {{5.55349, -3.40242, -0.8525}, {-0.81535, -3.89477, 1.78084}, {2.91846, 2.74225, -6.95928}};
+    double b[ROWS] = {-4.0115, 0.58744, 0.41145};
 
-    double chute[COLS] = {-3.54628, 4.12575, 3.26808};
+    double chute[COLS] = {-0.03204, 2.80044, 2.97158};
 
     int n = 20;
 

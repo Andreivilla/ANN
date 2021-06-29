@@ -77,13 +77,23 @@ int main()
     int max_iter = 5;
     double tol = 0.00001;*/
 
-    double f(double x){
+    /* double f(double x){
         double e = 2.71828182845904523530287;
         return pow(e, 5*x) - 2;;
     }
     double a = -0.92732;
     double b = 1.91364;
     int max_iter = 6400;
+    double tol = 0.00001; */
+
+    //p1
+    double f(double x){
+        //double e = 2.71828182845904523530287;
+        return 2*(x+1)*(x-0.5)*(x-1);
+    }
+    double a = 0.7036;
+    double b = 1.2688;
+    int max_iter = 5;
     double tol = 0.00001;
 
     false_position(f, a, b, max_iter, tol);

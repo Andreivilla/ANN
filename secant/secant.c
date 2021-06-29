@@ -82,7 +82,7 @@ int main(int argc, char *argv[]){
     double x1 = -0.93197;
     int n = 5;*/
 
-    double f(double x){
+    /* double f(double x){
         //double e = 2.71828182845904523530287;
         //double pi = 3.14159265358979323846;
         return pow(x, 2) - 3;
@@ -90,7 +90,17 @@ int main(int argc, char *argv[]){
 
     double x0 = -2.35176;
     double x1 = -0.93197;
-    int n = 5;
+    int n = 5; */
+    
+    double f(double x){
+        //double e = 2.71828182845904523530287;
+        //double pi = 3.14159265358979323846;
+        return pow(x, 2) - 7;
+    }
+
+    double x0 = 2.10146;
+    double x1 = 3.00242;
+    int n = 6;
 
     secant(f , x0, x1, n);
 }

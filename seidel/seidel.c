@@ -32,9 +32,9 @@ int main(){
    //ordem do sistema
     int rows = 3;
     //estimativa inicial para solução do sistema
-    double chute[3] = {-3.54628, 4.12575, 3.26808};
+    double chute[3] = {4.23793, 3.35832, 4.9764};
     //matriz estendida do sistema linear
-    double matrix[3][4] = {{3.55941, 1.6492, 0.66651, -2.60175}, {-1.56294, 4.76155, -1.9549, -4.70056}, {-2.85747, -4.88641, -8.98759, -0.8796}};
+    double matrix[3][4] = {{3.62382, 1.04167, 1.55212, 0.98612}, {-3.08151, -8.37228, -4.26073, 0.32161}, {-2.31705, 0.69484, -4.04192, -1.66764}};
     //numero máximo de iterações
     int max_iter = 20;
 

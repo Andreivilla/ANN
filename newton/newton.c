@@ -92,7 +92,7 @@ int main(int argc, char *argv[]){
     double x0 = -1.03;
     int n = 5;*/
 
-    double f(double x){
+    /* double f(double x){
         double e = 2.71828182845904523530287;
         //double pi = 3.14159265358979323846;
         return pow(e, 5*x) - 2;
@@ -103,7 +103,21 @@ int main(int argc, char *argv[]){
         return 5*pow(e, 5*x);
     }
     double x0 = -1.16076274;
-    int n = 700;
+    int n = 700; */
+
+    //p1
+    double f(double x){
+        // /double e = 2.71828182845904523530287;
+        //double pi = 3.14159265358979323846;
+        return 4*pow(x, 2) - ;
+    }
+    double df(double x){
+        //double e = 2.71828182845904523530287;
+        //double pi = 3.14159265358979323846;
+        return 2*x;
+    }
+    double x0 = -2.4257 ;
+    int n = 5;
 
     newton(f, df, x0, n);
 }
