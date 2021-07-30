@@ -44,14 +44,15 @@ if __name__ == '__main__':
         #return e**(cos(x)**2) + e**(-x**2) + log(x)
         #return cos(x + log(x**2)**(1/2))
         #return cos(sin(log(x**2)))
-        return sin((pi+x**2)**(1/2))
+        #return sin((pi+x**2)**(1/2))
+        return e**(cos(x)**2) + e**(-x**2) + log(x)
 
-
+    print( f'f(1): {f(1)}')
     #pontos para contruir a fórmula
-    ordem = 5
-    x0 = 2.3516108
-    x = [-1.8012243, -1.0566657, -0.4934558, 0.3113094, 0.7616207, 1.2475632, 1.832175, 2.7456502, 3.2937524, 3.6551106, 3.9560499, 4.5322, 5.5664778, 6.0629338, 6.5930397]
+    ordem = 2
+    x0 = 3.1225725
+    x = [2.1225725, 2.3725725, 2.6225725, 2.8725725, 3.1225725, 3.3725725, 3.6225725, 3.8725725]
 
     r = finite_diffs(x, ordem, x0, f)
-    print(f(3))
+
     print(f'aproximação para a derivada de ordem {ordem} de f no ponto {x0}', r)

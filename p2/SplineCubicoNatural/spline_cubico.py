@@ -72,9 +72,9 @@ def f(x):
     #return e**(cos(x)**2) + e**(-x**2) + log(x)
     #return cos(x + log(x**2)**(1/2))
 
-x = [0.28, 0.578, 0.7, 1.013, 1.204, 1.451, 1.681, 1.78, 1.953, 2.17, 2.431, 2.688, 2.842]
-y = [0.847, 0.63, 0.793, 1.0, 0.935, 0.779, 0.651, 0.611, 0.563, 0.54, 0.558, 0.607, 0.646]
-valores = [0.434, 0.452, 1.73, 1.914, 2.811]
+x = [0.503, 1.629, 2.473, 3.06, 4.14, 5.0, 6.014, 6.507]
+y = [4.653, 3.012, 2.218, 2.003, 2.458, 3.284, 3.964, 3.975]
+valores = [0.763, 6.198, 6.502]
 
 #aplicando x para S(x)
 listaCoef = splineListaCoef(x, y)
@@ -84,8 +84,6 @@ for i in range(len(valores)):
             soma = listaCoef[j][0] + listaCoef[j][1]*(valores[i] - x[j]) + listaCoef[j][2]*(valores[i] - x[j])**2 + listaCoef[j][3]*(valores[i] - x[j])**3
             print(f'S({valores[i]} = {soma})')
             break
-
-
 
 
 #eqs = splineSTR(x, y)
