@@ -20,9 +20,10 @@ if __name__ == "__main__":
     def f(x,y):
         return y*(2-x) + x + 1
         
-    x0 = 1.09815
-    y0 = 1.82198
-    r = euler_half(f, x0, y0, h=0.11625 , n=10)
+    x0 = 1.19498
+    y0 = 2.13208
+    
+    r = euler_half(f, x0, y0, h=0.18598 , n=10)
     j = 1
     for i in r:
         print(f'{j}:\tx: {i[0]}\ty: {i[1]}')

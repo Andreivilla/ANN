@@ -18,10 +18,10 @@ if __name__ == '__main__':
     def f(x, y):
         return y*(2-x) + x + 1
     
-    x0 = 1.71087
-    y0 = 2.33813
+    x0 = 0.25354
+    y0 = 2.97589
 
-    r = ralston(f, x0, y0, h=0.18806, n=10)
+    r = ralston(f, x0, y0, h=0.14579, n=10)
     j = 1
     for i in r:
         print(f'{j}:\tx: {i[0]}\ty: {i[1]}')

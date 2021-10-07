@@ -20,10 +20,10 @@ if __name__ == '__main__':
     def f(x, y):
         return y*(1-x) + x + 2
 
-    x0 = 0.67046
-    y0 = 0.8659 
+    x0 = 1.88131
+    y0 = 0.91985
 
-    r = rk4(f, x0, y0, h=0.15033, n=10)
+    r = rk4(f, x0, y0, h=0.19001, n=10)
     j = 1
     for i in r:
         print(f'{j}:\tx: {i[0]}\ty: {i[1]}')

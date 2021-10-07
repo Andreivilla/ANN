@@ -18,10 +18,10 @@ if __name__ == '__main__':
     def f(x, y):
         return y*(2-x) + x + 1
     
-    x0 = 1.55776
-    y0 = 2.2675
+    x0 = 1.15506
+    y0 = 1.84649
 
-    r = heun(f, x0, y0, h=0.14529, n=10)
+    r = heun(f, x0, y0, h=0.15585, n=10)
     j = 1
     for i in r:
         print(f'{j}:\tx: {i[0]}\ty: {i[1]}')

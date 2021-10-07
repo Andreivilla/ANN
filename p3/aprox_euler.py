@@ -10,14 +10,14 @@ def euler(f, x0: float, y0: float, h: float, n: int):
         y0 = y
     return xs, ys
 
-x0 = 1.04602
-y0 = 2.43731
-h = 0.13844
+x0 = 0.71307
+y0 = 1.4241
+h = 0.15589
 
 def f(x, y):
     #return y* + math.exp(-x**2) + 2
-    #return y*(1-x) + x + 2
-    return y*(2-x) + x + 1
+    return y*(1-x) + x + 2
+    #return y*(2-x) + x + 1
 
 
 r = euler(f, x0, y0, h, n=10)
